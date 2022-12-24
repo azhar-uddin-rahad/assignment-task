@@ -1,3 +1,4 @@
+import { useQuery } from "@tanstack/react-query";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
@@ -53,12 +54,22 @@ const Register = () => {
         
       
     }
+
+    const { data: bookings, isLoading } = useQuery({
+      queryKey: ["bookings"],
+      queryFn: async () => {
+        const res = await fetch("http://localhost:5000/bookings");
+        const data = await res.json();
+        return data;
+      },
+    });
+   
   
 
 
   return (
     <div className="">
-      <form onSubmit={handleSignUp} className="p-32">
+      <form onSubmit={handleSignUp} className="p-32 mb-32">
       <div>
       <input type="text" name="name" required placeholder="Type Your Name" className="input input-bordered input-secondary w-full max-w-xs" />
       </div>
@@ -160,28 +171,44 @@ const Register = () => {
            </div>
 </form>
 
-      {/* <select class="form-control select2">
-	<optgroup label="Africa">
-		<optgroup label="Egypt">
-			<option value="">Alexandria</option>
-			<option value="">Cairo</option>
-		</optgroup>
-		<optgroup label="Morocoo">
-			<option value="">Casablanca</option>
-			<option value="">El Rabat</option>
-		</optgroup>
-	</optgroup>
-	<optgroup label="North America">
-		<optgroup label="USA">
-			<option value="">New York</option>
-			<option value="">Nashville</option>
-		</optgroup>
-		<optgroup label="Canada">
-			<option value="">Toronto</option>
-			<option value="">Cairo</option>
-		</optgroup>
-	</optgroup>
-</select> */}
+      <div >
+
+        
+    <div className="overflow-x-auto">
+  <table className="table w-full">
+   
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Job</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+    {bookings &&
+       bookings.map((booking,i) =>   <tr>
+                  
+                   <th>{i+1}</th>
+                   <td>{booking.userName}</td>
+                   <td>{booking.selectOption}</td>
+                   <td><button className="btn btn-success">Update</button></td>
+                     <td><button className="btn btn-error">Error</button></td>
+                 </tr>)
+        
+
+        }  
+     
+    </tbody>
+  </table>
+</div>
+
+</div>
+
+
+
     </div>
   );
 };
