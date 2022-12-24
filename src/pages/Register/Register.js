@@ -37,7 +37,7 @@ const Register = () => {
     .then(data =>{ 
         console.log(data);
        
-       /*  if(data.acknowledged){
+       if(data.acknowledged){
        
         toast.success('Booking Confired');
        
@@ -47,7 +47,7 @@ const Register = () => {
             toast.error(data.message);
             
         }
-         */
+         
     
     })
         
