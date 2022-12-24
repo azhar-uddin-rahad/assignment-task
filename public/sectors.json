@@ -1,0 +1,96 @@
+[
+    {
+        "._id" : "1",
+        "objectGroupName" : "Manufacturing",
+        "subMenu1" : "Construction materials",
+        "subMenu2" : "Electronics and Optics",
+        "ManufacturingSubMenu1" : "Food and Beverage",
+          "option1" :"Bakery onfectionery products",
+           "option2":"Beverages",
+           "option3" : "Fish  fish products",
+           "option4" : "Meat  meat products",
+           "option5" :  "Milk  dairy products",
+           "option6" :  "Sweets  snack food",
+           "option7" : "Other",  
+        "ManufacturingSubMenu2" : "Furniture",
+        "option8" : "Bathroom/sauna",
+        "option9" :"Bedroom",
+        "option10" :"Childrens room",
+        "option11" :  "Kitchen ",
+        "option12" :   "Living room",
+        "option13" : "Office",
+        "option14" :  "Other (Furniture)",
+        "option15" : "Outdoor",
+        "option16" :  "Project furniture",
+        "ManufacturingSubMenu3" :"Machinery",
+        "option17" : "Machinery components",
+        "option18" : "Machinery equipment/tools",
+        "option19" : "Manufacture of machinery",
+        "option20" : "Maritime ",
+        "option21" : "Aluminium and steel workboats",
+        "option22" : "Boat/Yacht building",
+        "option23" : "Ship repair and conversion",
+        "option24" : "Metal structures",
+        "option25" : "Other",
+        "option26" : "Repair and maintenance service",
+        "ManufacturingSubMenu4" :"Metal working",
+        "option27" : "Construction of metal structures",
+        "option28" : "Houses and buildings",
+        "option29" : "Metal products",
+        "option30" : "Metal works",
+        "option31" : "CNC-machining",
+        "option32" : "Forgings, Fasteners",
+        "option33" : "Gas, Plasma, Laser cutting",
+        "option34" : "MIG, TIG, Aluminum welding",
+        "ManufacturingSubMenu5" :"Packaging and Rubber",
+        "option35" : "Packaging",
+        "option36" : "Plactic golds",
+        "option37" : "Plastic Processiong technology",
+        "option38" : "Blowing",
+        "option39" :"Moulding",
+        "option40" :"Plastic profiles",
+    
+        "ManufacturingSubMenu6" : "Printing",
+        "option41" :"Advertising",
+        "option42" :"Book/Periodicals printing",
+        "option43" : "Labelling and packaging printing",
+        "objectGroupSubMenu7" :"Textile and Clothing",
+        "option44" : ";Clothing",
+        "option45" : "Textile",
+        "ManufacturingSubMenu7" : "Wood",
+        "option46" : "Other (Wood)",
+        "option47" : "Wooden building materials",
+        "option48" : "Wooden houses"
+
+        
+    }
+    ,
+    {
+        "objectGroupName" : "Other",
+        "option49" : "Creative industries",
+        "option50" : "Energy technology",
+        "option51" : "Environment"
+
+    },
+    
+    {
+        "objectGroupName" : "Service",
+        "option52" : "Business services",
+        "option53" : "Engineering",
+        "ServiceSubMenu1" : "Information Technology and Telecommunications",
+        "option54" : "Data processing, Web portals, E-marketing",
+        "option55" : "Programming, Consultancy",
+        "option56" : "Software, Hardware",
+        "option57" : "Telecommunications",
+        "ServiceSubMenu2" : "Tourism",
+        "ServiceSubMenu3" : "Translation services",
+        "ServiceSubMenu4" : "Transport and Logistics",
+        "option58" : "Air",
+        "option59" : "Rail",
+        "option60" : "Software, Hardware",
+        "option61" : "Telecommunications"
+
+
+
+    }
+]
